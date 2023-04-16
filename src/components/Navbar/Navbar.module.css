@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: var(--padding) 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+	box-sizing: var(--box-sizing);
+	font-family: var(--font-family);
+}
+
+.nav a {
+	margin: var(--margin) 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+	box-sizing: var(--box-sizing);
+	font-family: var(--font-family);
+}
+
+.nav a:hover {
+	color: var(--secondaryColor);
+}
+
+.header .navBtn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+	box-sizing: var(--box-sizing);
+	font-family: var(--font-family);
+}
+
+.header div,
+.nav {
+	display: flex;
+	align-items: center;
+	box-sizing: var(--box-sizing);
+	font-family: var(--font-family);
+}
+
+@media only screen and (max-width: 1024px) {
+	.header .navBtn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.header .nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+		box-sizing: var(--box-sizing);
+		font-family: var(--font-family);
+	}
+
+	.header .responsiveNav {
+		transform: translateY(100vh);
+	}
+
+	.nav .navCloseBtn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	.nav a {
+		font-size: 1.5rem;
+		box-sizing: var(--box-sizing);
+		font-family: var(--font-family);
+	}
+}

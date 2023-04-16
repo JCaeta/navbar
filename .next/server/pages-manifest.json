@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/blog/first": "pages/blog/first.html",
+  "/blog": "pages/blog.html",
+  "/blog/second": "pages/blog/second.html",
+  "/api/Component": "pages/api/Component.js",
+  "/product/[productId]": "pages/product/[productId].html",
+  "/product": "pages/product.html",
+  "/product/[productId]/review/[reviewId]": "pages/product/[productId]/review/[reviewId].html",
+  "/": "pages/index.html",
+  "/product/sweater": "pages/product/sweater.html",
+  "/404": "pages/404.html"
+}
